@@ -28,8 +28,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 data = pd.read_csv("/content/Mall_Customers (1).csv")
 
+print("data.head")
+data.head()
+
+print("data.info")
 data.info()
 
+print("data.isnull().sum()")
 data.isnull().sum()
 
 from sklearn.cluster import KMeans
@@ -49,6 +54,7 @@ km = KMeans(n_clusters = 5)
 km.fit(data.iloc[:,3:])
 
 y_pred = km.predict(data.iloc[:,3:])
+print("y_pred")
 y_pred
 
 data["cluster"] = y_pred
@@ -66,8 +72,19 @@ plt.legend()
 plt.title("Customer Segments")
 ```
 ## Output:
-![K Means Clustering for Customer Segmentation](sam.png)
+![K Means Clustering for Customer Segmentation](1.png)
 
+![K Means Clustering for Customer Segmentation](2.png)
+
+![K Means Clustering for Customer Segmentation](3.png)
+
+![K Means Clustering for Customer Segmentation](4.png)
+
+![K Means Clustering for Customer Segmentation](5.png)
+
+![K Means Clustering for Customer Segmentation](6.png)
+
+![K Means Clustering for Customer Segmentation](7.png)
 
 ## Result:
 Thus the program to implement the K Means Clustering for Customer Segmentation is written and verified using python programming.
