@@ -72,7 +72,7 @@ plt.legend()
 plt.title("Customer Segments")
 ```
 ## Output:
-```
+
 ![K Means Clustering for Customer Segmentation](1.png)
 
 ![K Means Clustering for Customer Segmentation](2.png)
@@ -86,7 +86,7 @@ plt.title("Customer Segments")
 ![K Means Clustering for Customer Segmentation](6.png)
 
 ![K Means Clustering for Customer Segmentation](7.png)
-```
+
 
 ## Result:
 Thus the program to implement the K Means Clustering for Customer Segmentation is written and verified using python programming.
